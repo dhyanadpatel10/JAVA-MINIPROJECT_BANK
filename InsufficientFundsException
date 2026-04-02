@@ -1,0 +1,8 @@
+package in.ac.adit.pwj.miniproject.bank;
+
+public class InsufficientFundsException extends Exception {
+    public InsufficientFundsException(String accountNo, double balance, double requested, String reason) {
+        super("💳 ERROR " + accountNo + ": " + reason + 
+              " | Balance: $" + balance + " | Requested: $" + requested);
+    }
+}
